@@ -1,0 +1,1 @@
+SELECT ItemCode, Descr ,Price FROM Item WHERE Price=(SELECT MAX(Price) FROM Item WHERE Price < (SELECT MAX(Price) FROM Item))
