@@ -1,0 +1,1 @@
+SELECT dISTINCT ItemCode,Itemtype,Descr,Category FROM Item   WHERE Itemcode IN(SELECT ItemCode FROM PurchaseBill)
