@@ -1,0 +1,1 @@
+SELECT EName, Job FROM EMP WHERE EmpNo IN (SELECT EmpNo FROM EmpVehicle)
