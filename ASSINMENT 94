@@ -1,0 +1,1 @@
+SELECT ItemCode, ItemType ,Descr, Category FROM Item  WHERE ItemCode=(SELECT DISTINCT ItemCode FROM Quotation WHERE QuotedPrice=(SELECT MIN(QuotedPrice)FROM Quotation WHERE QStatus='Rejected'))
